@@ -25,7 +25,9 @@
                 "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi",
                 "https://addons.mozilla.org/firefox/downloads/latest/languagetool/latest.xpi",
                 "https://addons.mozilla.org/firefox/downloads/latest/linkding-injector/latest.xpi",
-                "https://addons.mozilla.org/firefox/downloads/latest/linkding-extension/latest.xpi"
+                "https://addons.mozilla.org/firefox/downloads/latest/linkding-extension/latest.xpi",
+                "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-for-firefox/latest.xpi",
+                "https://addons.mozilla.org/firefox/downloads/latest/violentmonkey/latest.xpi"
             ]
         }
     }
