@@ -39,13 +39,16 @@ user_pref("gfx.canvas.accelerated", true);
 // user_pref("browser.search.countryCode", "US");
 // user_pref("browser.search.region", "US");
 
-// // Change the default search engine to, e.g., DuckDuckGo
-// user_pref("browser.search.defaultenginename", "DuckDuckGo");
-// user_pref("browser.search.selectedEngine", "DuckDuckGo");
+// Change the default search engine to, e.g., DuckDuckGo
+user_pref("browser.search.defaultenginename", "DuckDuckGo");
+user_pref("browser.search.defaultenginename.US", "DuckDuckGo");  // Ensure for US locale
+user_pref("browser.search.selectedEngine", "DuckDuckGo");
+user_pref("browser.search.separatePrivateDefault", false);  // Use the same search engine in private windows
+user_pref("browser.search.separatePrivateDefault.ui.enabled", true);  // Show the separate search engine setting in private windows
+user_pref("browser.search.separatePrivateDefault.engine", "DuckDuckGo");  // Force DuckDuckGo for private windows
 
 /* 9001: disable welcome notices ***/
 // user_pref("browser.startup.homepage_override.mstone", "ignore"); // [HIDDEN PREF]
-
 
 /****************************************************************************
  * SECTION: TRANSLATIONS                                                   *
