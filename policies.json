@@ -11,6 +11,7 @@
         "DisableDeveloperTools": false,
         "DontCheckDefaultBrowser": true,
         "PasswordManagerEnabled": false,
+        "DisableFormHistory": true,
         "DNSOverHTTPS": {
             "Enabled": false,
             "ProviderURL": "",
@@ -26,7 +27,6 @@
                 "https://addons.mozilla.org/firefox/downloads/latest/languagetool/latest.xpi",
                 "https://addons.mozilla.org/firefox/downloads/latest/linkding-injector/latest.xpi",
                 "https://addons.mozilla.org/firefox/downloads/latest/linkding-extension/latest.xpi",
-                "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-for-firefox/latest.xpi",
                 "https://addons.mozilla.org/firefox/downloads/latest/violentmonkey/latest.xpi",
                 "https://addons.mozilla.org/firefox/downloads/latest/simplelogin/latest.xpi",
                 "https://addons.mozilla.org/firefox/downloads/latest/tabs2text/latest.xpi"

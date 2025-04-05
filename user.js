@@ -147,6 +147,7 @@ user_pref("toolkit.coverage.opt-out", true);
 user_pref("toolkit.coverage.endpoint.base", "");
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
+user_pref("browser.ping-centre.telemetry", false); // Disable daily usage ping to Mozilla
 
 /** EXPERIMENTS ***/
 user_pref("app.shield.optoutstudies.enabled", false);
@@ -232,6 +233,10 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
+
+/** FORM AUTOFILL ***/
+user_pref("extensions.formautofill.addresses.enabled", false); // Disable saving and filling addresses
+user_pref("extensions.formautofill.creditCards.enabled", false); // Disable saving and filling payment methods
 
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
