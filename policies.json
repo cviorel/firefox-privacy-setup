@@ -11,6 +11,7 @@
         "DisableDeveloperTools": false,
         "DontCheckDefaultBrowser": true,
         "PasswordManagerEnabled": false,
+        "MicrosoftEntraSSO": true,
         "DisableFormHistory": true,
         "DNSOverHTTPS": {
             "Enabled": false,
