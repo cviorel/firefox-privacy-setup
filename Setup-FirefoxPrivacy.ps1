@@ -342,42 +342,9 @@ function Install-FirefoxPolicies {
     }
 }
 
-# Security validation
-function Test-ScriptIntegrity {
-    [CmdletBinding()]
-    param()
-
-    try {
-        # Validate required files exist and are readable
-        $requiredFiles = @($UserJsPath, $OverridesPath, (Join-Path $PSScriptRoot "policies.json"))
-        foreach ($file in $requiredFiles) {
-            if (-not (Test-Path $file -PathType Leaf)) {
-                throw "Required file not found: $file"
-            }
-
-            # Basic file size validation
-            $fileInfo = Get-Item $file
-            if ($fileInfo.Length -eq 0) {
-                throw "File is empty: $file"
-            }
-        }
-
-        Write-Log -Message "Script integrity validation passed"
-        return $true
-    }
-    catch {
-        Write-Log -Message "Script integrity validation failed: $_" -Level ERROR
-        return $false
-    }
-}
 
 # Main execution block
 try {
-    # Perform security validation first
-    if (-not (Test-ScriptIntegrity)) {
-        throw "Script integrity validation failed. Aborting execution."
-    }
-
     if (-not $Force) {
         Write-Log -Message "WARNING: This script will remove all existing Firefox profiles!" -Level WARNING
         Write-Log -Message "Press Ctrl+C within 5 seconds to cancel..."
